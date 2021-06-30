@@ -37,10 +37,10 @@ Step 1 :
 
 Step 2 :  
 登陸兩(三)台要連接內網的VM之後，使用  
-$ ifconfig -a  
+`$ ifconfig -a`  
 確認內網網路卡的名稱 (In our case, enp0s8)  
 然後使用指令  
-$ sudo ifconfig enp0s8 192.168.1.1 netmask 255.255.255.0 up  
+`$ sudo ifconfig enp0s8 192.168.1.1 netmask 255.255.255.0 up`  
 開啟網路卡  
 192.168.1.1 可以自己設定 (不同的機器要不同 192.168.1.1 192.168.1.100 in our case)  
 不過注意每一次開機都要設定  
