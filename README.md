@@ -71,6 +71,7 @@ http service (Apache web service) need to be enable
 
 Open terminal  
 $ sshuttle -r user@192.168.2.113 192.168.1.0/24  
+Need root privilege for both local & the ssh server  
 
 ### dynamic port forwarding
 
