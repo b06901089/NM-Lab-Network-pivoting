@@ -24,6 +24,11 @@ OS : Ubuntu server 20.04.2 or Kali Linux
 VirtualBox VM3 (option)  
 OS : Metasploitable2 (For running DVWA)  
 (You can also install DVWA on the target machine, but it is quite a long process for installing DVWA alone.)  
+(I personally take this as my guideline to install DVWA https://medium.datadriveninvestor.com/setup-install-dvwa-into-your-linux-distribution-d76dc3b80357)  
+
+Step 0 :  
+下載然後導入ubuntu server到VirtualBox  
+https://ubuntu.com/download/server  
 
 Step 1 :  
 完成VirtualBox的網路介面卡設定  
@@ -39,8 +44,8 @@ $ sudo ifconfig enp0s8 192.168.1.1 netmask 255.255.255.0 up
 192.168.1.1 可以自己設定 (不同的機器要不同 192.168.1.1 192.168.1.100 in our case)  
 不過注意每一次開機都要設定  
 
-這樣即完成網路設定
-可以用ping指令確認
+這樣即完成網路設定  
+可以用ping或ifconfig指令確認  
 
 ### Enviroment & Installation
 
@@ -71,7 +76,7 @@ http service (Apache web service) need to be enable
 
 Open terminal  
 $ sshuttle -r user@192.168.2.113 192.168.1.0/24  
-Need root privilege for both local & the ssh server  
+Need root privilege for both local and the ssh server  
 
 ### dynamic port forwarding
 
