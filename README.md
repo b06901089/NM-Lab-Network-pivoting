@@ -60,15 +60,15 @@ https://www.metasploit.com
 
 VirtualBox VM1 (SSH Server)  
 
-ssh service need to be enable  
-http service (Apache web service) need to be enable  
+ssh service need to be install  
+http service (Apache web service) need to be install  
 root account for sshuttle  
 normal user account for port forwarding  
 
 VirtualBox VM2 (Target machine)  
 
-ssh service need to be enable  
-http service (Apache web service) need to be enable  
+ssh service need to be install  
+http service (Apache web service) need to be install  
 
 ## Ways of Pivoting
 
@@ -101,6 +101,9 @@ msf6 auxiliary(dos/http/slowloris) > set rhost 192.168.1.100
 msf6 auxiliary(dos/http/slowloris) > run  
 
 Now you should see it working !!!  
+
+可以在target machine上下指令確認有沒有被DOS  
+$ systemctl status  
 
 ### reverse shell
 
