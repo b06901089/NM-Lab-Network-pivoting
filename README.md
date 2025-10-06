@@ -2,13 +2,13 @@
 
 This is a little playground for practicing network pivoting.
 
-[Demo](<https://youtu.be/gpVocB_ycLo>)
+[Demo Vedio (YouTube)](<https://youtu.be/gpVocB_ycLo>)
 
 ## Prerequisite
 
 ### Network architecture and setups
 
-The following is our network settings for doing this Lab.
+The following is our network settings.
 
 #### Local (Attacker)
 * OS : MacOS or Kali Linux  
